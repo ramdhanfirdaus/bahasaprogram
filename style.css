@@ -1,0 +1,247 @@
+body{
+    margin: 0 auto;
+    background-color: rgb(218, 218, 218);
+}
+
+.container{
+    width: 1000px;
+    height: auto;
+    background-color: rgb(25, 146, 226);
+    margin: auto;
+}
+
+img{
+    height: 100px;
+}
+
+.logo{
+    float: left;
+    padding: 15px;
+}
+
+.search{
+    float: right;
+    padding: 35px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.main-menu{
+    background-color: white;
+}
+
+.main-menu > ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.main-menu > ul > li{
+    display: inline-block;
+}
+
+.main-menu > ul > li > a{
+    color: rgb(25, 146, 226);
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.main-menu > ul > li > a:hover{
+    background-color: black;
+}
+
+.drop{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    display: none;
+    z-index: 999;
+}
+
+/* drop */
+.drop > li > a{
+    color: rgb(25, 146, 226);
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    background-color: gray;
+}
+
+.drop > li > a:hover{
+    background-color: black;
+}
+
+.main-menu > ul > li:hover .drop{
+    display: block;
+}
+
+/* banner */
+.banner{
+    max-width: auto;
+    height: 690px;
+    position: relative;
+}
+
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide1 {
+    background: url(./image/1.png) no-repeat center;
+    background-size: cover;
+    animation: fade 15s infinite;
+    -webkit-animation: fade 15s infinite;
+}
+.slide2 {
+    background: url(./image/2.png) no-repeat center;
+    background-size: cover;
+    animation: fade2 15s infinite;
+    -webkit-animation: fade2 15s infinite;
+}
+.slide3 {
+    background: url(./image/3.png) no-repeat center;
+    background-size: cover;
+    animation: fade3 15s infinite;
+    -webkit-animation: fade3 15s infinite;
+}
+.slide4 {
+    background: url(./image/4.png) no-repeat center;
+    background-size: cover;
+    animation: fade4 15s infinite;
+    -webkit-animation: fade4 15s infinite;
+}
+.slide5 {
+    background: url(./image/5.png) no-repeat center;
+    background-size: cover;
+    animation: fade5 15s infinite;
+    -webkit-animation: fade5 15s infinite;
+}
+
+@keyframes fade {
+    0%{opacity: 1;}
+    20%{opacity: 1;}
+    40%{opacity: 0;}
+    60%{opacity: 0;}
+    80%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes fade2 {
+    0%{opacity: 0;}
+    20%{opacity: 0;}
+    40%{opacity: 1;}
+    60%{opacity: 0;}
+    80%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes fade3 {
+    0%{opacity: 0;}
+    20%{opacity: 0;}
+    40%{opacity: 0;}
+    60%{opacity: 1;}
+    80%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes fade4 {
+    0%{opacity: 0;}
+    20%{opacity: 0;}
+    40%{opacity: 0;}
+    60%{opacity: 0;}
+    80%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes fade5 {
+    0%{opacity: 0;}
+    20%{opacity: 0;}
+    40%{opacity: 0;}
+    60%{opacity: 0;}
+    80%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/* content holder */
+.content-holder{
+    background-color: white;
+}
+
+.content{
+    color: white;
+    width: 700px;
+    height: auto;
+    padding: 25px;
+    background-color:  rgb(25, 146, 226);
+    float: left;
+}
+
+.content h1{
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content a{
+    color: white;
+    text-decoration: none;
+}
+
+.content p{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.content ul > li{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.content ol > li{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.sidebar{
+    float: left;
+    padding: 25px;
+}
+
+.sidebar h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(25, 146, 226);
+}
+
+.sidebar ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none
+}
+
+.sidebar ul > li > a{
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(25, 146, 226);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.sidebar img{
+    width: 200px;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.sidebar p{
+    text-align: center;
+    margin-block-start: 0px;
+}
