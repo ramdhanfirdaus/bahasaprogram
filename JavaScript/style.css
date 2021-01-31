@@ -85,16 +85,61 @@ img{
 
 /* banner */
 .banner{
-    background-color: white;
-    width: 1000px;
-    height: auto;
-    overflow: hidden;
+    max-width: auto;
+    height: 690px;
+    position: relative;
 }
 
-.banner img{
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+    position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
+
+.slide1 {
+    background: url(1.png) no-repeat center;
+    background-size: cover;
+    animation: fade 15s infinite;
+    -webkit-animation: fade 15s infinite;
+}
+.slide2 {
+    background: url(2.png) no-repeat center;
+    background-size: cover;
+    animation: fade2 15s infinite;
+    -webkit-animation: fade2 15s infinite;
+}
+.slide3 {
+    background: url(3.png) no-repeat center;
+    background-size: cover;
+    animation: fade3 15s infinite;
+    -webkit-animation: fade3 15s infinite;
+}
+
+@keyframes fade {
+    0%{opacity: 1;}
+    20%{opacity: 1;}
+    40%{opacity: 0;}
+    60%{opacity: 0;}
+    80%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes fade2 {
+    0%{opacity: 0;}
+    20%{opacity: 0;}
+    40%{opacity: 1;}
+    60%{opacity: 0;}
+    80%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes fade3 {
+    0%{opacity: 0;}
+    20%{opacity: 0;}
+    40%{opacity: 0;}
+    60%{opacity: 1;}
+    80%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
 
 /* content holder */
 .content-holder{
